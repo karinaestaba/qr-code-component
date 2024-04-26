@@ -14,7 +14,10 @@ $padding: 1.1rem
   padding: 0
   box-sizing: border-box
 
-html,
+html
+  height: 100%
+  min-height: 100vh
+
 body
   height: 100%
   min-height: 100vh
@@ -23,6 +26,11 @@ body
   line-height: $line-height
   font-size: $font-size
   color: $grayish-blue
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  gap: $padding
 
 .main-container
   height: 100%
@@ -34,6 +42,7 @@ body
   align-items: center
   margin: 0 auto
   padding: $padding
+  width: 100%
 
 .card
   padding: $padding
